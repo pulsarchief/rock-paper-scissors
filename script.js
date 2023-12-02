@@ -87,7 +87,25 @@ function rounds()
     }
 }
 
-rounds()
+function play()
+{
+    play = true;
+    while (play)
+    {
+        rounds();
+        let input = prompt("Want to play again? Y or N only:")
+        {
+            if (input=='Y')
+            {
+                play = true;
+            }
+            else
+            {
+                play = false;
+            }
+        }
+    }
 
+}
 
-
+play()
