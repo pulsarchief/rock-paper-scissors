@@ -1,7 +1,7 @@
 function getComputerChoice()
 {
     let choice = Math.floor(Math.random() * 3);
-    let choice_array = ["stone", "Paper", "Scissors"];
+    let choice_array = ["Stone", "Paper", "Scissors"];
     return choice_array[choice];
 }
 
