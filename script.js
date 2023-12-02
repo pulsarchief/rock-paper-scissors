@@ -75,7 +75,7 @@ function rounds()
     while ((comp < 5) || (user < 5))
     {
         game(comp, user);
-        alert("User= " + user + " Computer= " + comp);
+        alert("User: " + user + " Computer: " + comp);
     }
     if (comp == 5)
     {
