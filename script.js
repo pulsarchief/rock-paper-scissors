@@ -47,13 +47,13 @@ function playRound(user_Selection,computer_Selection)
 function game()
 {
     let computer_Selection = getComputerChoice();
-    let user_Selection = prompt("Please choose between STONE,PAPER and SCISSORS:");
+    let user_Selection = prompt("Please choose between STONE,PAPER and SCISSORS:").toUpperCase();
     let twl = (playRound(user_Selection, computer_Selection));
     console.log(twl);
     switch (twl)
     {
         case 1:
-            alert("TIE");
+            alert("TIE!!!! both played "+user_Selection);
             game();
             break;
         case 2:
@@ -75,7 +75,7 @@ function rounds()
     while ((comp < 5) && (user < 5))
     {
         game(comp, user);
-        alert("User: " + user + " Computer: " + comp);
+        alert("User : " + user + " Computer : " + comp);
     }
     if (comp == 5)
     {
