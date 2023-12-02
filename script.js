@@ -72,18 +72,18 @@ function rounds()
 {
     alert("Welcome to STONE,PAPER,SCISSORS")
     alert("User plays first:")
-    while ((comp < 5) || (user < 5))
+    while ((comp < 5) && (user < 5))
     {
         game(comp, user);
-        alert("User= " + user + " Computer= " + comp);
+        alert("User: " + user + " Computer: " + comp);
     }
     if (comp == 5)
     {
-        alert("Computer wins 5 matches first:");
+        alert("COMPUTER WINS 5 MATCHES FIRST !!!!:");
     }
     else if (user == 5)
     {
-        alert("User wins 5 matches first:");
+        alert("USER WINS 5 MATCHES FIRST !!!!:");
     }
 }
 
