@@ -47,7 +47,7 @@ function playRound(user_Selection,computer_Selection)
 function game()
 {
     let computer_Selection = getComputerChoice();
-    let user_Selection = prompt("User please input your choice:");
+    let user_Selection = prompt("Please choose between stone,paper and scissors:");
     let twl = (playRound(user_Selection, computer_Selection));
     console.log(twl);
     switch (twl)
@@ -57,29 +57,34 @@ function game()
             game();
             break;
         case 2:
-            alert("lose");
+            alert("User Loses!!!! "+computer_Selection+" beats "+user_Selection);
             comp+=1;
             break;
         case 3:
-            alert("win");
+            alert("User Wins!!!! "+user_Selection+" beats "+computer_Selection);
             user += 1;
             break;
     }
 }
 let comp=0, user = 0;
 
-function rounds() {
-    alert("Welcome to stone,Paper,Scissors")
+function rounds()
+{
+    alert("Welcome to Stone,Paper,Scissors")
     alert("User plays first:")
     while ((comp < 5) || (user < 5))
     {
         game(comp, user);
-        alert("user= " + user + " computer= " + comp);
+        alert("User= " + user + " Computer= " + comp);
     }
     if (comp == 5)
+    {
         alert("Computer wins 5 matches first:");
+    }
     else if (user == 5)
+    {
         alert("User wins 5 matches first:");
+    }
 }
 
 rounds()
