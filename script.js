@@ -18,12 +18,17 @@ scissors.addEventListener("click", () => play(2)); // clicking scissors button
 
 
 function play(user) {
+    if (user_score.textContent >= 5 || comp_score.textContent >= 5) {
+        return;
+    }
     let choices = ["stone", "paper", "scissors"];
     let choices_img = ["icons/stone.png", "icons/paper.png", "icons/scissors.png"];
     let u = user;
     let c = Math.floor(Math.random() * 3);
     user_choice.setAttribute("src", choices_img[u]);
     comp_choice.setAttribute("src", choices_img[c]);
+    incrementRounds();
+    logic(u, c);
     if (user_score.textContent >= 5) {
         info.textContent = "USER WINS 5!!!!"
         return;
@@ -32,8 +37,6 @@ function play(user) {
         info.textContent = "COMPUTER WINS 5!!!!"
         return;
     }
-    incrementRounds();
-    logic(u, c);
 }
 
 function logic(user, computer) {
