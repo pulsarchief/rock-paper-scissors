@@ -34,7 +34,6 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	height: 300px;
-	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
@@ -78,4 +77,10 @@ button {
 	font-size: x-large;
 	width: 420px;
 	justify-content: space-around;
+}
+
+#rounds{
+	text-align: center;
+	font-size: x-large;
+	color: aliceblue;
 }
