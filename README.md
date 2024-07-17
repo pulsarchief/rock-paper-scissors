@@ -1,7 +1,5 @@
 # rock-paper-scissors
 
-Web-dev version of Stone-Paper-Scissors
+Odin project , assignment 
 
-completed the whole program in one go without commits 
-
-no gui , fully javascript based 
+earlier variant was fully js bases added UI after learning DOM
