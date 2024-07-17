@@ -2,4 +2,6 @@
 
 Odin project , assignment 
 
-earlier variant was fully js bases added UI after learning DOM
+earlier variant was fully js bases
+
+added html,css UI  and rewrote js after learning DOM
