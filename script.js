@@ -24,8 +24,6 @@ function play(user) {
     let c = Math.floor(Math.random() * 3);
     user_choice.setAttribute("src", choices_img[u]);
     comp_choice.setAttribute("src", choices_img[c]);
-    incrementRounds();
-    logic(u, c);
     if (user_score.textContent >= 5) {
         info.textContent = "USER WINS 5!!!!"
         return;
@@ -34,6 +32,8 @@ function play(user) {
         info.textContent = "COMPUTER WINS 5!!!!"
         return;
     }
+    incrementRounds();
+    logic(u, c);
 }
 
 function logic(user, computer) {
