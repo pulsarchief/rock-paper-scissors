@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Stone-Paper-Scissors</title>
-</head>
-<body> 
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<script src="script.js" defer></script>
+
+		<title>Stone-Paper-Scissors</title>
+	</head>
+	<body>
+		<header>
+			<h1>Stone Paper Scissors</h1>
+		</header>
+		<span id="results">
+			<span id="chosen"
+				><img
+					id="choice_u"
+					src="icons/question.png"
+					alt="" />
+				<img
+					id="choice_c"
+					src="icons/question.png"
+					alt=""
+			/></span>
+			<span id="resultsp">
+				<p>USER</p>
+				<p>COMPUTER</p>
+			</span>
+			<span id="score">
+				<p id="user_score">0</p>
+				<P id="info">PLAY</P>
+				<p id="comp_score">0</p>
+			</span>
+		</span>
+		<span id="buttons">
+			<button id="stone">
+				<img
+					src="icons/stone.png"
+					alt="stone"
+				/>
+			</button>
+			<button id="paper">
+				<img
+					src="icons/paper.png"
+					alt="paper"
+				/>
+			</button>
+			<button id="scissors">
+				<img
+					src="icons/scissors.png"
+					alt="scissors"
+				/>
+			</button>
+		</span>
+	</body>
 </html>
